@@ -9,7 +9,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDB"));
-builder.Services.AddSingleton<MongoDBService>();
+builder.Services.AddSingleton<UserService>();
+builder.Services.AddSingleton<CompanyService>();
+builder.Services.AddSingleton<ClassroomService>();
+builder.Services.AddSingleton<ChallengeService>();
+builder.Services.AddSingleton<SolutionService>();
 
 var app = builder.Build();
 

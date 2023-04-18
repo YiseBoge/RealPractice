@@ -31,7 +31,7 @@ public class MongoDBService
         return await _usersCollection.Find(new BsonDocument()).ToListAsync();
     }
 
-    public async Task<List<Company>> GetCompaniessAsync()
+    public async Task<List<Company>> GetCompaniesAsync()
     {
         return await _companiesCollection.Find(new BsonDocument()).ToListAsync();
     }
@@ -128,7 +128,16 @@ public class MongoDBService
     {
         var filter = Builders<User>.Filter
                     .Eq("Id", id);
-        var result = await _usersCollection.ReplaceOneAsync(filter, user);
+
+        var update = Builders<User>.Update
+            .Set(usr => usr.Name, user.Name)
+            .Set(usr => usr.Classrooms, user.Classrooms)
+            .Set(usr => usr.Email, user.Email)
+            .Set(usr => usr.Role, user.Role)
+            .Set(usr => usr.Solutions, user.Solutions)
+            .Set(usr => usr.Password, user.Password);
+
+        var result = await _usersCollection.UpdateOneAsync(filter, update);
         return;
 
     }
@@ -138,7 +147,14 @@ public class MongoDBService
     {
         var filter = Builders<Company>.Filter
                     .Eq("Id", id);
-        var result = await _companiesCollection.ReplaceOneAsync(filter, company);
+
+        var update = Builders<Company>.Update
+            .Set(comp => comp.Name, company.Name)
+            .Set(comp => comp.Challenges, company.Challenges)
+            .Set(comp => comp.Email, company.Email)
+            .Set(comp => comp.Password, company.Password);
+
+        var result = await _companiesCollection.UpdateOneAsync(filter, update);
         return;
 
     }
@@ -148,7 +164,16 @@ public class MongoDBService
     {
         var filter = Builders<Challenge>.Filter
                     .Eq("Id", id);
-        var result = await _challengesCollection.ReplaceOneAsync(filter, challenge);
+
+        var update = Builders<Challenge>.Update
+            .Set(chalng => chalng.Title, challenge.Title)
+            .Set(chalng => chalng.Description, challenge.Description)
+            .Set(chalng => chalng.Answer, challenge.Answer)
+            .Set(chalng => chalng.Difficulty, challenge.Difficulty)
+            .Set(chalng => chalng.Company, challenge.Company)
+            .Set(chalng => chalng.AssignedTo, challenge.AssignedTo);
+
+        var result = await _challengesCollection.UpdateOneAsync(filter, update);
         return;
 
     }
@@ -159,7 +184,14 @@ public class MongoDBService
     {
         var filter = Builders<Classroom>.Filter
                     .Eq("Id", id);
-        var result = await _classroomsCollection.ReplaceOneAsync(filter, classroom);
+
+        var update = Builders<Classroom>.Update
+            .Set(cls => cls.Name, classroom.Name)
+            .Set(cls => cls.Teacher, classroom.Teacher)
+            .Set(cls => cls.Students, classroom.Students)
+            .Set(cls => cls.AssignedChallenges, classroom.AssignedChallenges);
+
+        var result = await _classroomsCollection.UpdateOneAsync(filter, update);
         return;
 
     }
@@ -169,7 +201,16 @@ public class MongoDBService
     {
         var filter = Builders<Solution>.Filter
                     .Eq("Id", id);
-        var result = await _solutionsCollection.ReplaceOneAsync(filter, solution);
+
+        var update = Builders<Solution>.Update
+            .Set(sol => sol.Content, solution.Content)
+            .Set(sol => sol.SolverStudent, solution.SolverStudent)
+            .Set(sol => sol.Challenge, solution.Challenge)
+            .Set(sol => sol.remark, solution.remark)
+            .Set(sol => sol.score, solution.score)
+            .Set(sol => sol.time, solution.time);
+
+        var result = await _solutionsCollection.UpdateOneAsync(filter, update);
         return;
 
     }
