@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace backend.Models;
 
-public class User
+public class Company
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
@@ -15,10 +15,5 @@ public class User
 
     public string Password { get; set; } = null!;
 
-    public string Role { get; set; } = null!;
-
-    public List<ObjectId> Classrooms { get; set; } = null!;
-
-    public List<ObjectId> Solutions { get; set; } = null!;
-    
+    public List<ObjectId> Challenges { get; set; } = null!;
 }
