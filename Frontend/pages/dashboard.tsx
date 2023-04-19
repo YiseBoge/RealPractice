@@ -265,82 +265,6 @@ const Dashboard: NextPage = () => {
           </div>
         </div>
         <div className="absolute top-[850px] left-[817px] flex flex-col items-start justify-start text-sm text-gray-300 font-segoe-ui">
-          <div className="relative w-[858px] h-[21px] shrink-0">
-            <div className="absolute top-[-10px] left-[-10px] w-[868px] h-[41px] overflow-hidden">
-              <div className="absolute top-[calc(50%_-_10.5px)] left-[10px] w-[76.16px] h-[21px]">
-                <div className="absolute top-[-1px] left-[0px] leading-[21px]">
-                  Array
-                </div>
-                <div className="absolute top-[calc(50%_-_9px)] left-[37.45px] rounded-3xs bg-gray-1100 flex flex-row py-px pr-[6.700000762939453px] pl-1.5 items-start justify-start text-xs text-darkslategray-800">
-                  <div className="relative leading-[16px]">1348</div>
-                </div>
-              </div>
-              <div className="absolute top-[calc(50%_-_10.5px)] left-[106.16px] w-[72.61px] h-[21px]">
-                <div className="absolute top-[-1px] left-[0px] leading-[21px]">
-                  String
-                </div>
-                <div className="absolute top-[calc(50%_-_9px)] left-[40.57px] rounded-3xs bg-gray-1100 flex flex-row py-px pr-[6.029998779296875px] pl-1.5 items-start justify-start text-xs text-darkslategray-800">
-                  <div className="relative leading-[16px]">607</div>
-                </div>
-              </div>
-              <div className="absolute top-[calc(50%_-_10.5px)] left-[198.77px] w-[105.83px] h-[21px]">
-                <div className="absolute top-[-1px] left-[0px] leading-[21px]">
-                  Hash Table
-                </div>
-                <div className="absolute top-[calc(50%_-_9px)] left-[73.79px] rounded-3xs bg-gray-1100 flex flex-row py-px pr-[6.029998779296875px] pl-1.5 items-start justify-start text-xs text-darkslategray-800">
-                  <div className="relative leading-[16px]">465</div>
-                </div>
-              </div>
-              <div className="absolute top-[calc(50%_-_10.5px)] left-[324.59px] w-[178.41px] h-[21px]">
-                <div className="absolute top-[-1px] left-[0px] leading-[21px]">
-                  Dynamic Programming
-                </div>
-                <div className="absolute top-[calc(50%_-_9px)] left-[146.38px] rounded-3xs bg-gray-1100 flex flex-row py-px pr-[6.029998779296875px] pl-1.5 items-start justify-start text-xs text-darkslategray-800">
-                  <div className="relative leading-[16px]">426</div>
-                </div>
-              </div>
-              <div className="absolute top-[calc(50%_-_10.5px)] left-[523px] w-[67.16px] h-[21px] text-smi">
-                <div className="absolute top-[-1px] left-[0px] leading-[21px]">
-                  Math
-                </div>
-                <div className="absolute top-[calc(50%_-_9px)] left-[35.13px] rounded-3xs bg-gray-1100 flex flex-row py-px pr-[6.029998779296875px] pl-1.5 items-start justify-start text-xs text-darkslategray-800">
-                  <div className="relative leading-[16px]">424</div>
-                </div>
-              </div>
-              <div className="absolute top-[calc(50%_-_10.5px)] left-[610.16px] w-[80.39px] h-[21px] text-smi">
-                <div className="absolute top-[-1px] left-[0px] leading-[21px]">
-                  Sorting
-                </div>
-                <div className="absolute top-[calc(50%_-_9px)] left-[48.36px] rounded-3xs bg-gray-1100 flex flex-row py-px pr-[6.029998779296875px] pl-1.5 items-start justify-start text-xs text-darkslategray-800">
-                  <div className="relative leading-[16px]">309</div>
-                </div>
-              </div>
-              <div className="absolute top-[calc(50%_-_10.5px)] left-[710.55px] w-[81.95px] h-[21px]">
-                <div className="absolute top-[-1px] left-[0px] leading-[21px]">
-                  Greedy
-                </div>
-                <div className="absolute top-[calc(50%_-_9px)] left-[49.92px] rounded-3xs bg-gray-1100 flex flex-row py-px pr-[6.029998779296875px] pl-1.5 items-start justify-start text-xs text-darkslategray-800">
-                  <div className="relative leading-[16px]">302</div>
-                </div>
-              </div>
-              <div className="absolute top-[12px] left-[812.5px] leading-[21px] flex items-center w-[117.68px] h-4">
-                Depth-First Search
-              </div>
-            </div>
-            <div className="absolute h-[calc(100%_+_15px)] w-[calc(100%_-_769.52px)] top-[-8px] right-[0px] bottom-[-7px] left-[769.52px] text-right text-darkslategray-800">
-              <div className="absolute top-[0px] left-[24px] bg-light w-[64.48px] h-9">
-                <div className="absolute top-[6.5px] left-[3px] leading-[21px]">
-                  Expand
-                </div>
-                <img
-                  className="absolute top-[calc(50%_-_7.5px)] left-[49.48px] w-[15px] h-[15px] overflow-hidden"
-                  alt=""
-                  src="/svg5.svg"
-                />
-              </div>
-              <div className="absolute top-[0px] left-[0px] [background:linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0))] w-6 h-9" />
-            </div>
-          </div>
           <div className="relative w-[874px] h-16 shrink-0 overflow-hidden text-base text-gray-1000">
             <div className="absolute top-[12px] left-[16px] rounded-9980xl bg-gray-1100 flex flex-row py-2.5 pr-[16.300003051757812px] pl-4 items-center justify-start gap-[8px]">
               <img
@@ -408,24 +332,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh5.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              64.9%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -439,24 +345,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh51.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              49.8%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -470,24 +358,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh51.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              40.4%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[302px] h-[21px] overflow-hidden">
@@ -496,27 +366,11 @@ const Dashboard: NextPage = () => {
                   className="relative leading-[21px] text-[inherit] [text-decoration:none]"
                   href="https://leetcode.com/problems/longest-substring-without-repeating-characters/"
                   target="_blank"
-                >{`3. `}</a>
+                >
+                  3. Longest Substring Without Repeating Chara...
+                </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh51.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              33.8%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -530,17 +384,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              36.3%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-crimson">
-              Hard
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -554,24 +397,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh52.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              32.4%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[132.31px] h-[21px] overflow-hidden">
@@ -585,24 +410,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh52.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              44.9%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -616,24 +423,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              27.5%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -647,24 +436,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              16.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -678,24 +449,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              53.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -709,24 +462,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              28.0%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-crimson">
-              Hard
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[190.89px] h-[21px] overflow-hidden">
@@ -740,24 +475,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh54.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              54.0%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[131.53px] h-[21px] overflow-hidden">
@@ -771,24 +488,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              62.1%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[131.53px] h-[21px] overflow-hidden">
@@ -802,24 +501,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              58.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[173.55px] h-[21px] overflow-hidden">
@@ -833,24 +514,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh54.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              40.9%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -864,24 +527,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              32.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[110.52px] h-[21px] overflow-hidden">
@@ -895,24 +540,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              45.7%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -926,24 +553,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              56.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -957,24 +566,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh53.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              35.9%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[245.13px] h-[21px] overflow-hidden">
@@ -988,24 +579,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh55.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              41.2%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -1019,24 +592,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh55.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              40.5%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[170.17px] h-[21px] overflow-hidden">
@@ -1050,24 +605,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh55.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              62.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -1081,24 +618,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              72.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[151.75px] h-[21px] overflow-hidden">
@@ -1112,24 +631,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh55.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              49.9%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-crimson">
-              Hard
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[153.31px] h-[21px] overflow-hidden">
@@ -1143,24 +644,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              61.4%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[189.11px] h-[21px] overflow-hidden">
@@ -1174,24 +657,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              54.8%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-crimson">
-              Hard
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -1205,24 +670,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              51.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[130.75px] h-[21px] overflow-hidden">
@@ -1236,24 +683,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh55.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              53.1%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[302px] h-[21px] overflow-hidden">
@@ -1265,24 +694,6 @@ const Dashboard: NextPage = () => {
                 >{`28. `}</a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              39.2%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[146.06px] h-[21px] overflow-hidden">
@@ -1296,24 +707,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              17.1%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[283.8px] h-[21px] overflow-hidden text-smi">
@@ -1327,24 +720,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh55.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              31.2%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-crimson">
-              Hard
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[131.53px] h-[21px] overflow-hidden">
@@ -1358,24 +733,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh55.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              37.6%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[189.67px] h-[21px] overflow-hidden">
@@ -1389,24 +746,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              32.8%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-crimson">
-              Hard
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[217.14px] h-[21px] overflow-hidden">
@@ -1420,24 +759,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              39.0%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[302px] h-[21px] overflow-hidden">
@@ -1449,24 +770,6 @@ const Dashboard: NextPage = () => {
                 >{`34. `}</a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              41.9%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -1480,24 +783,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              43.5%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-lightseagreen">
-              Easy
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-light w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] overflow-hidden flex flex-row items-start justify-start">
@@ -1511,24 +796,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              58.1%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] text-smi leading-[21px] text-orange">
-              Medium
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
           <div className="relative bg-whitesmoke-200 w-[858px] h-[43px] shrink-0">
             <div className="absolute top-[calc(50%_-_10.5px)] left-[86.5px] w-[114.42px] h-[21px] overflow-hidden">
@@ -1542,24 +809,6 @@ const Dashboard: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute top-[11px] left-[414.98px] overflow-hidden flex flex-row py-0 pr-[44.910003662109375px] pl-0 items-start justify-start">
-              <img
-                className="relative w-5 h-5 shrink-0 overflow-hidden"
-                alt=""
-                src="/svgh56.svg"
-              />
-            </div>
-            <div className="absolute top-[10px] left-[495.89px] leading-[21px]">
-              57.8%
-            </div>
-            <div className="absolute top-[10px] left-[632.08px] leading-[21px] text-crimson">
-              Hard
-            </div>
-            <img
-              className="absolute h-[calc(100%_-_19.5px)] top-[8.5px] bottom-[11px] left-[749.03px] max-h-full w-[100.97px]"
-              alt=""
-              src="/divwfill.svg"
-            />
           </div>
         </div>
         <div className="absolute top-[2591px] left-[817px] w-[858px] h-[33px] text-center text-sm text-gray-1000 font-segoe-ui">
