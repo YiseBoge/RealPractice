@@ -1,47 +1,125 @@
 using Microsoft.AspNetCore.Mvc;
 using backend.Services;
 using backend.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace backend.Controllers;
 
 [Controller]
-[Route("[controller]")]
+[Authorize]
+[Route("api/[controller]")]
 
 public class UserController : Controller
 {
 
-    private readonly MongoDBService _mongoDBService;
+    private readonly UserService _userService;
 
-    public UserController(MongoDBService mongoDBService)
+    public UserController(UserService userService)
     {
-        _mongoDBService = mongoDBService;
+        _userService = userService;
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpGet]
     public async Task<List<User>> Get()
     {
-        return await _mongoDBService.GetAsync();
+        return await _userService.GetAsync();
     }
 
     [HttpGet("{id}")]
-    public async Task<User> GetbyId(string id)
+    public async Task<ActionResult<User>> GetbyId(string id)
     {
-        return await _mongoDBService.GetbyIdAsync(id);
+
+        if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value != null)
+        {
+            // Get the user ID from the claim
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // Check if the user is authorized to access the resource
+            if (userId == id || User.IsInRole("Admin"))
+            {
+                // Return the resource
+                return await _userService.GetbyIdAsync(id);
+            }
+            else
+            {
+                // Return a 403 Forbidden response
+                return Forbid();
+            }
+        }
+        else
+        {
+            // Return a 401 Unauthorized response
+            return Unauthorized();
+        }
     }
 
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] User user)
     {
-        await _mongoDBService.CreateAsync(user);
+        await _userService.CreateAsync(user);
         return CreatedAtAction(nameof(Get), new { id = user.Id }, user);
+
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(string id, [FromBody] User user)
+    {
+        if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value != null)
+        {
+            // Get the user ID from the claim
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // Check if the user is authorized to access the resource
+            if (userId == id || User.IsInRole("Admin"))
+            {
+                // Return the resource
+                await _userService.UpdateAsync(id, user);
+                return NoContent();
+            }
+            else
+            {
+                // Return a 403 Forbidden response
+                return Forbid();
+            }
+        }
+        else
+        {
+            // Return a 401 Unauthorized response
+            return Unauthorized();
+        }
+
     }
 
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(string id)
     {
-        await _mongoDBService.DeleteAsync(id);
-        return NoContent();
+        if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value != null)
+        {
+            // Get the user ID from the claim
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // Check if the user is authorized to access the resource
+            if (userId == id || User.IsInRole("Admin"))
+            {
+
+                await _userService.DeleteAsync(id);
+                return NoContent();
+            }
+            else
+            {
+                // Return a 403 Forbidden response
+                return Forbid();
+            }
+        }
+        else
+        {
+            // Return a 401 Unauthorized response
+            return Unauthorized();
+        }
+
     }
 
 }

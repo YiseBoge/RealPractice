@@ -9,15 +9,19 @@ public class User
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
-    public string username { get; set; } = null!;
+    public string Name { get; set; } = null!;
 
-    public string password { get; set; } = null!;
+    public string Email { get; set; } = null!;
 
-    public string email { get; set; } = null!;
+    public string Password { get; set; } = null!;
 
-    public string phoneNumber { get; set; } = null!;
+    public string Role { get; set; } = null!;
 
-    public DateTime created { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> Classrooms { get; set; } = null!;
+    
 
-    public DateTime updated { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> Solutions { get; set; } = null!;
+
 }
