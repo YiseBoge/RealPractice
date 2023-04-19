@@ -2,6 +2,7 @@ using backend.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using backend.Config;
 
 namespace backend.Services;
 

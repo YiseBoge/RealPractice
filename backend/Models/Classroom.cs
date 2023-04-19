@@ -11,9 +11,14 @@ public class Classroom
 
     public string Name { get; set; } = null!;
 
-    public ObjectId Teacher { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string? Teacher { get; set; }
 
-    public List<ObjectId> Students { get; set; } = null!;
+
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> Students { get; set; } = null!;
     
-    public List<ObjectId> AssignedChallenges { get; set; } = null!;
+    
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> AssignedChallenges { get; set; } = null!;
 }

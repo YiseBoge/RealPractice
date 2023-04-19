@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using backend.Services;
 using backend.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace backend.Controllers;
 
 [Controller]
-[Route("[controller]")]
+[Authorize]
+[Route("api/[controller]")]
 
 public class UserController : Controller
 {
@@ -17,6 +20,7 @@ public class UserController : Controller
         _userService = userService;
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpGet]
     public async Task<List<User>> Get()
     {
@@ -24,9 +28,31 @@ public class UserController : Controller
     }
 
     [HttpGet("{id}")]
-    public async Task<User> GetbyId(string id)
+    public async Task<ActionResult<User>> GetbyId(string id)
     {
-        return await _userService.GetbyIdAsync(id);
+
+        if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value != null)
+        {
+            // Get the user ID from the claim
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // Check if the user is authorized to access the resource
+            if (userId == id || User.IsInRole("Admin"))
+            {
+                // Return the resource
+                return await _userService.GetbyIdAsync(id);
+            }
+            else
+            {
+                // Return a 403 Forbidden response
+                return Forbid();
+            }
+        }
+        else
+        {
+            // Return a 401 Unauthorized response
+            return Unauthorized();
+        }
     }
 
     [HttpPost]
@@ -38,18 +64,62 @@ public class UserController : Controller
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Put(string id, [FromBody] User user) {
-        await _userService.UpdateAsync(id, user);
-        return NoContent();
-        
+    public async Task<IActionResult> Put(string id, [FromBody] User user)
+    {
+        if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value != null)
+        {
+            // Get the user ID from the claim
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // Check if the user is authorized to access the resource
+            if (userId == id || User.IsInRole("Admin"))
+            {
+                // Return the resource
+                await _userService.UpdateAsync(id, user);
+                return NoContent();
+            }
+            else
+            {
+                // Return a 403 Forbidden response
+                return Forbid();
+            }
+        }
+        else
+        {
+            // Return a 401 Unauthorized response
+            return Unauthorized();
+        }
+
     }
 
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(string id)
     {
-        await _userService.DeleteAsync(id);
-        return NoContent();
+        if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value != null)
+        {
+            // Get the user ID from the claim
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // Check if the user is authorized to access the resource
+            if (userId == id || User.IsInRole("Admin"))
+            {
+
+                await _userService.DeleteAsync(id);
+                return NoContent();
+            }
+            else
+            {
+                // Return a 403 Forbidden response
+                return Forbid();
+            }
+        }
+        else
+        {
+            // Return a 401 Unauthorized response
+            return Unauthorized();
+        }
+
     }
 
 }

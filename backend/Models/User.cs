@@ -17,8 +17,11 @@ public class User
 
     public string Role { get; set; } = null!;
 
-    public List<ObjectId> Classrooms { get; set; } = null!;
-
-    public List<ObjectId> Solutions { get; set; } = null!;
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> Classrooms { get; set; } = null!;
     
+
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> Solutions { get; set; } = null!;
+
 }

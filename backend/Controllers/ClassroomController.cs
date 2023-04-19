@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using backend.Services;
 using backend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace backend.Controllers;
 
+[Authorize(Roles = "teacher, Admin")]
 [Controller]
-[Route("[controller]")]
+[Route("api/[controller]")]
 
 public class ClassroomController : Controller
 {
@@ -36,11 +38,26 @@ public class ClassroomController : Controller
         return CreatedAtAction(nameof(Get), new { id = classroom.Id }, classroom);
     }
 
+    [HttpPost("{id}/students")]
+    public async Task<IActionResult> PostStudent(string id, [FromBody] User user)
+    {
+        await _classroomService.AddStudentAsync(id, user);
+        return NoContent();
+    }
+
+    [HttpPost("{id}/assigned_challenges")]
+    public async Task<IActionResult> PostChallenge(string id, [FromBody] Challenge challenge)
+    {
+        await _classroomService.AddChallengeAsync(id, challenge);
+        return NoContent();
+    }
+
     [HttpPut("{id}")]
-    public async Task<IActionResult> Put(string id, [FromBody] Classroom classroom) {
+    public async Task<IActionResult> Put(string id, [FromBody] Classroom classroom)
+    {
         await _classroomService.UpdateAsync(id, classroom);
         return NoContent();
-        
+
     }
 
 

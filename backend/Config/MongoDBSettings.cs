@@ -1,4 +1,4 @@
-namespace backend.Models;
+namespace backend.Config;
 
 public class MongoDBSettings
 {
@@ -14,6 +14,7 @@ public class MongoDBSettings
     public string ChallengeCollection {get; set;} = null!;
 
     public string ClassroomCollection {get; set;} = null!;
+    
     public string SolutionCollection {get; set;} = null!;
 
 }

@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using backend.Services;
 using backend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace backend.Controllers;
 
+[Authorize(Roles = "Company, Admin")]
 [Controller]
-[Route("[controller]")]
+[Route("api/[controller]")]
 
 
 public class CompanyController : Controller
@@ -17,6 +19,7 @@ public class CompanyController : Controller
     {
         _companyService = companyService;
     }
+
 
     [HttpGet]
     public async Task<List<Company>> Get()

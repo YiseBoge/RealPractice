@@ -17,8 +17,13 @@ public class Challenge
 
     public string Difficulty {get; set; } = null!;
 
-    public ObjectId Company { get; set; }
 
-    public List<ObjectId> AssignedTo { get; set; } = null!;
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string? Company { get; set; }
+
+
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> AssignedTo { get; set; }
+
 
 }

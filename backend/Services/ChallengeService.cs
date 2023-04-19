@@ -2,6 +2,7 @@ using backend.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using backend.Config;
 
 namespace backend.Services;
 
@@ -54,6 +55,7 @@ public class ChallengeService
             .Set(chalng => chalng.Difficulty, challenge.Difficulty)
             .Set(chalng => chalng.Company, challenge.Company)
             .Set(chalng => chalng.AssignedTo, challenge.AssignedTo);
+            
 
         var result = await _challengesCollection.UpdateOneAsync(filter, update);
         return;

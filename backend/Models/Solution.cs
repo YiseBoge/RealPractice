@@ -11,9 +11,13 @@ public class Solution
 
     public string Content { get; set; } = null!;
 
-    public ObjectId SolverStudent { get; set; }
 
-    public ObjectId Challenge { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string? SolverStudent { get; set; }
+    
+
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string? Challenge { get; set; }
 
     public string remark {get; set;} = null!;
 

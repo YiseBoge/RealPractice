@@ -2,6 +2,7 @@ using backend.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using backend.Config;
 
 namespace backend.Services;
 
@@ -35,6 +36,14 @@ public class SolutionService
 
 
 
+    public async Task<List<Solution>> GetbySolverIdAsync(string id)
+    {
+        var filter = Builders<Solution>.Filter.Eq(r => r.SolverStudent, id);
+        return await _solutionsCollection.Find(filter).ToListAsync();
+    }
+
+
+
     public async Task CreateAsync(Solution solution)
     {
         await _solutionsCollection.InsertOneAsync(solution);
@@ -49,12 +58,8 @@ public class SolutionService
                     .Eq("Id", id);
 
         var update = Builders<Solution>.Update
-            .Set(sol => sol.Content, solution.Content)
-            .Set(sol => sol.SolverStudent, solution.SolverStudent)
-            .Set(sol => sol.Challenge, solution.Challenge)
             .Set(sol => sol.remark, solution.remark)
-            .Set(sol => sol.score, solution.score)
-            .Set(sol => sol.time, solution.time);
+            .Set(sol => sol.score, solution.score);
 
         var result = await _solutionsCollection.UpdateOneAsync(filter, update);
         return;

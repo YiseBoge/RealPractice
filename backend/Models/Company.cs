@@ -14,6 +14,8 @@ public class Company
     public string Email { get; set; } = null!;
 
     public string Password { get; set; } = null!;
+    
 
-    public List<ObjectId> Challenges { get; set; } = null!;
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string?> Challenges { get; set; } = null!;
 }
